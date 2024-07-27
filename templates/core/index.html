@@ -1,0 +1,538 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre">
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+    <link rel="stylesheet" href="% static 'assets/css/styles.min.css'%">
+    <link rel="stylesheet" href="{% static 'assets/css/features-boxed.css' %}">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('#featureSlider').carousel({
+            interval: 3000 // Adjust the interval (in milliseconds) between slides
+        });
+    });
+</script>
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: 'Abhaya Libre', serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #202122;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            color: #fff;
+        }
+
+        .nav-link:hover {
+            color: #ccc;
+        }
+
+        .form-control {
+            border-radius: 20px;
+        }
+
+        .action-button {
+            margin-left: 10px;
+        }
+
+        /* Features section styling */
+        .features-boxed {
+            padding: 50px 0;
+            background-color: #fff;
+        }
+
+        .features-boxed h2 {
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+
+        .features-boxed p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        .box {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .description {
+            color: #555;
+        }
+
+        /* Projects section styling */
+        .projects-horizontal {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+        }
+
+        .projects-horizontal h2 {
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .projects-horizontal p {
+            font-size: 18px;
+            color: #555;
+            text-align: center;
+        }
+
+        .item {
+            margin-bottom: 30px;
+        }
+
+        .name,
+        .description {
+            color: #333;
+        }
+
+        /* Team section styling */
+        .team-clean {
+            padding: 50px 0;
+            background-color: #fff;
+        }
+
+        .team-clean h2 {
+            margin-bottom: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .rounded-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .title {
+            color: #555;
+        }
+
+        .social {
+            margin-top: 20px;
+        }
+
+        .social a {
+            margin: 0 10px;
+            color: #333;
+            font-size: 20px;
+        }
+
+        /* Footer styling */
+        .footer-basic {
+            padding: 20px 0;
+            background-color: #202122;
+            color: #ccc;
+        }
+
+        .footer-basic a {
+            color: #ccc;
+        }
+
+        .footer-basic ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .footer-basic ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search" style="color: rgb(2,6,10);background-color: #202122;">
+    <div class="container">
+        <a class="navbar-brand" href="#">BikeChapchap</a>
+        <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" href="">HOME</a>
+                    </li>
+                    <li class="dropdown nav-item">
+                        <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="">PRODUCTS</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="presentation" href="#">Bikes</a>
+                            <a class="dropdown-item" role="presentation" href="#">Scooters</a>
+                            <a class="dropdown-item" role="presentation" href="#"></a>
+                        </div>
+                    </li>
+                </ul>
+            <form class="form-inline mr-auto" target="_self">
+                <div class="form-group">
+                    <label for="search-field">
+                        <i class="fa fa-search" style="padding: 16px;">
+                        </i>
+                    </label>
+                    <input class="form-control search-field" type="search" id="search-field" name="search"></div>
+            </form>
+            <span class="navbar-text">
+                <a class="login" href="{%url 'userauths:login'%}" style="color: rgb(238,245,245); margin:20PX ;">Log In  </a>
+            </span>
+            <a class="btn btn-light action-button" role="button" href="{%url 'userauths:signup'%}">Sign Up</a>
+            <a class="btn btn-dark action-button" role="button" href="{%url 'userauths:logout'%}">Logout</a>
+        </div>
+        
+    
+    </div>
+  </nav>
+    <div style="height: 310px;background-color: #242527;">
+        <h1 style="color: rgb(255,255,255);font-family: 'Abhaya Libre', serif;opacity: 0.85;">BikeChapchap helps you to get a bike you need&nbsp;</h1>
+        <hr style="width: 50%;color: rgb(15, 50, 85);background-color: #fffdfd;"><small class="form-text text-muted">Browse the website to rent a bike</small></div>
+    <!-- Start: Features Boxed -->
+   <!-- {%if messages%}
+              {%for message in messages%}
+                  <div class="alert alert-{{message.tags}">
+                    <strong>{{message}}</strong>
+                  </div>
+              {%endfor%}
+    {%endif%}
+    {<script>
+        setTimeout (()=>(),3000)
+    </script> -->
+     <!-- Add Bootstrap and jQuery scripts -->
+
+  
+    <div class="features-boxed" style="height: 600px;">
+        <div style="height: 360;"></div>
+        <div class="container" style="height: 600;">
+            <!-- Start: Intro -->
+            <div class="intro">
+                <h2 class="text-center">Features </h2>
+                <p class="text-center">Here you get to book a bike of any size  on an hourly basis</p>
+            </div>
+            <!-- End: Intro -->
+            <!-- Start: Features -->
+            <div class="row justify-content-center features" style="height: 400px;">
+                <div class="col-sm-6 col-md-5 col-lg-4 item" style="height: 300px;margin: 0;">
+                    <div class="box"><i class="fa fa-map-marker icon"></i>
+                        <h3 class="name">Works everywhere</h3>
+                        <p class="description">You book,we deliver.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item" style="height: 300px;">
+                    <div class="box" style="margin: 0px;"><i class="fa fa-plane icon"></i>
+                        <h3 class="name">Fast </h3>
+                        <p class="description">Book response is based on availability.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-5 col-lg-4 item" style="height: 300px;">
+                    <div class="box" style="margin: 0px;"><i class="fa fa-phone icon"></i>
+                        <h3 class="name">Mobile-first</h3>
+                        <p class="description">24/7 customer support.Contact as via 070701841 or email daviskpop@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- End: Features -->
+        </div>
+        <div></div>
+        <div></div>
+        
+    </div>
+    <!-- End: Features Boxed -->
+    <!-- Start: Projects Horizontal -->
+    <div class="projects-horizontal">
+        <div class="container">
+            <!-- Start: Intro -->
+            <div class="intro">
+                <h2 class="text-center">choose your bike or scooter now</h2>
+                <p class="text-center">check availability then BOOK !<br><br><br></p>
+            </div>
+            <!-- End: Intro -->
+            <!-- Start: Projects -->
+            <!--<div class="row projects">
+                <div class="col-sm-6 item">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-5"><img class="img-fluid" src="{% static 'assets/img/bike3.jpeg' %}"><button class="btn btn-primary" type="button" style="height: 39px;margin: 18px;padding: 2px;width: 93px;">Book now</button></div>
+                        <div class="col">
+                            <h3 class="name">black bike</h3>
+                            <p class="description">in perfect condition.</p>
+                        </div>
+                    </div>
+                </div> -->
+                <style>
+                    .product-box {
+                        border: 1px solid #e94545;
+                        padding: 15px;
+                        position: center;
+                        max-width: 200px; /* Set a maximum width */
+                        margin: 0 auto; /* Center the box */
+                        text-align: left; /* Align text to the left */
+                    }
+                
+                    .image-box img {
+                           width: 200px; /* Set a fixed width */
+                           height: 200px; /* Set a fixed height */
+                           object-fit: cover;
+                    }
+                
+                    .details-box {
+                        background-color: #f9f9f9;
+                        padding: 10px;
+                        max-height: 150px;
+                        overflow: hidden;
+                    }
+                
+                    .category {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        text-align:left;
+                    }
+                    .vendor {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                        text-align:right;
+                    }
+                
+                    .button-box {
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                </style>
+                
+                <style>
+                    .product-box {
+                        border: 1px solid #ccc;
+                        padding: 15px;
+                        position: relative;
+                        text-align: left;
+                        overflow: hidden;
+                    }
+                
+                    .image-box {
+                        position: relative;
+                    }
+                
+                    .image-box img {
+                        width: 200px; /* Set a fixed width */
+                        height: 200px; /* Set a fixed height */
+                        object-fit: cover;
+                    }
+                
+                    .vendor {
+                        position: absolute;
+                        top: 5px;
+                        right: 5px;
+                        background-color: #ff0000;
+                        color: white;
+                        padding: 3px 5px;
+                        font-size: 10px;
+                    }
+                
+                    .details-box {
+                        background-color: #f9f9f9;
+                        padding: 10px;
+                        max-height: 150px;
+                        overflow: hidden;
+                    }
+                
+                    .title {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                    }
+                
+                    .button-box {
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                    .price {
+                         position: relative;
+                         text-align: center;
+                    }
+
+                    .actual-price {
+                          font-size: 18px; /* Adjust font size of the new price */
+                    }
+
+                    .discounted-price {
+                        display: block;
+                        text-decoration: line-through;
+                        font-size: 14px; /* Adjust font size of the old price */
+                        color: #999; /* Color of the old price */
+                        position: absolute;
+                        top: 50%; /* Positioning old price in the middle */
+                        left: 0;
+                        right: 0;
+                        transform: translateY(50%);
+                    }
+                    
+                </style>
+                
+                <div class="col-sm-6 item mx-auto">
+                    <div class="row ">
+                        {% for p in products %}
+                        <div class="col-md-6 col-lg-4 item">
+                            <div class="product-box">
+                                <div class="image-box">
+                                    <img class="img-fluid" src="{{ p.image.url }}" alt="">
+                                    <h3 class="vendor">{{ p.vendor }}</h3>
+                                </div>
+                                <div class="details-box">
+                                    <h3 class="category">{{ p.category.title }}</h3>
+                                    <p class="title">{{ p.title }} </p>
+                                    <p class="ratings">★★★★☆ {{ p.ratings }}</p>
+                                    <p class="price">
+                                        {% if p.price %}
+                                            <span class="discounted-price">{{ p.old_price }}</span>
+                                            <span class="actual-price">Kshs.{{ p.price }}</span>
+                                        {% else %}
+                                            <span class="actual-price">Kshs.{{ p.price }}</span>
+                                        {% endif %}
+                                    </p>
+                                    <p class="description">{{ p.description }}</p>
+                                </div>
+                                <div class="button-box">
+                                    <a class="btn btn-primary" type="button" href="{%url 'core:bookingform'%}?product_id={{ p.id }}">Book now</a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                
+                
+                
+                
+            <!-- End: Projects -->
+        </div>
+    </div>
+    <!-- End: Projects Horizontal -->
+    <!-- Start: Team Grid -->
+    <div class="team-grid">
+        <div class="container">
+            <!-- Start: Intro -->
+            <div class="intro">
+                <h2 class="text-center">Meet the developer</h2>
+                <p class="text-center">Here is the developer who developed the system , you can contact him at anytime</p>
+            </div>
+            <!-- End: Intro -->
+        </div>
+    </div>
+    <!-- End: Team Grid -->
+    <!-- Start: Team Clean -->
+    <div class="team-clean">
+        <div class="container">
+            <!-- Start: Intro -->
+            <div class="intro"></div>
+            <!-- End: Intro -->
+            <!-- Start: People -->
+            <div class="row people">
+                <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="{% static 'assets/img/image.jpg' %}">
+                    <h3 class="name">Davis Kiprop</h3>
+                    <p class="title">developer</p>
+                    <div class="social">
+                      <a href="#">
+                        <i class="fab fa-github">vidakpop</i>
+                      </a>
+                      <a href="#"><i class="fab fa-twitter">@DavisKiprop3</i>
+                      </a>
+                      <a href="#">
+                        <i class="fab fa-linkedin">vidakpop</i>
+                      </a>
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+    <!-- End: Team Clean -->
+    <!-- Start: Footer Basic -->
+    <div class="footer-basic">
+        <footer>
+            <!-- Start: Social Icons -->
+            <div class="social">
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </div>
+            <!-- End: Social Icons -->
+            <!-- Start: Links -->
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="{%url 'core:feedbackform'%}">Send feedBack</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <!-- End: Links -->
+            <!-- Start: Copyright -->
+            <p class="copyright"> © 2023</p>
+            <!-- End: Copyright -->
+        </footer>
+    </div>
+    <!-- End: Footer Basic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
