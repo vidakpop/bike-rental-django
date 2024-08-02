@@ -136,7 +136,7 @@ def handle_payment_callback(request):
 
     # Validate the authenticity of the callback (Check the documentation of your payment gateway)
     # For M-Pesa Daraja, you might need to verify the Lipa Na M-Pesa online payment status
-    # Refer to the M-Pesa Daraja API documentation for details on verifying the callback
+    
 
     # Example verification for M-Pesa Daraja (This is just a simplified example, follow the API documentation)
     # You should replace these lines with actual verification logic
