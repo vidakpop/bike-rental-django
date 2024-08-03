@@ -131,11 +131,7 @@ def handle_payment_callback(request):
     # Extract relevant information from the request
     products = Product.objects.all().order_by("-id")
     order_id = request.GET.get('product_id')  # Assuming your payment gateway sends the product_id parameter
-    callback_path = request.GET.get('callback_path') # Get product_id from URL parameter # Assuming your payment gateway sends the order_id parameter
-    # ... extract other details ...
-
-    # Validate the authenticity of the callback (Check the documentation of your payment gateway)
-    # For M-Pesa Daraja, you might need to verify the Lipa Na M-Pesa online payment status
+    callback_path = request.GET.get('callback_path') # Get product_id from URL parameter # Assuming your payment gatew
     
 
     # Example verification for M-Pesa Daraja (This is just a simplified example, follow the API documentation)
