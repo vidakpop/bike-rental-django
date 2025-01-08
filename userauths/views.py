@@ -3,7 +3,7 @@ from userauths.forms import UserRegisterForm
 from django.contrib.auth import login, authenticate,logout
 from django.contrib import messages
 from django .conf import settings
-from userauths.models import User
+from userauths.models import User#import the default user 
 
 
 #User=settings.AUTH_USER_MODEL
